@@ -26,4 +26,18 @@
       margin-right: 0;
     }
   }
+
+  .intro {
+    margin-top: 54px;
+    padding: 70px 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .intro {
+    &__title {
+      font-size: 37px;
+      line-height: 114.286%;
+    }
+  }
 }
