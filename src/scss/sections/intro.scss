@@ -49,6 +49,7 @@
     & > * {
       display: inline-block; 
       @extend %body1; 
+      color: $white;
       span {
         color: $yellow;
       }
@@ -57,18 +58,14 @@
 
   // &__author {}
 
-  .separator {
-    margin: 0 10px;
-  }
-
   // &__date {}
 
   &__text {
     @extend %body1;
+    color: $white;
     margin-bottom: 48px;
     max-width: 600px;
   }
 
   // &__btn {}
-
 }

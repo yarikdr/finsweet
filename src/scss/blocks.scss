@@ -5,37 +5,47 @@
   padding: 0 10px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+%h1, %h2, %h3, %h4, %h5, %h6 {
   font-family: $font2;
   font-weight: 700;
+  color: $black;
 }
 
-.h1 {
-  font-size: 56px;
+%h1 {
+  font-size: 48px;
   line-height: 64px;
 }
 
-.h2 {
+%h2 {
   font-size: 36px;
   line-height: 48px;
+  @media (max-width: 425px) {
+    font-size: 30px;
+  }
 }
 
-.h3 {
+%h3 {
   font-size: 28px;
   line-height: 32px;
+  @media (max-width: 425px) {
+    font-size: 22px;
+  }
 }
 
-.h4 {
+%h4 {
   font-size: 24px;
   line-height: 32px;
+  @media (max-width: 425px) {
+    font-size: 20px;
+  }
 }
 
-.h5 {
+%h5 {
   font-size: 20px;
   line-height: 32px;
 }
 
-.h6 {
+%h6 {
   font-size: 16px;
   line-height: 24px;
 }
@@ -45,7 +55,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   line-height: 28px;
   font-weight: 400;
-  color: $white;
+  color: $black;
 }
 
 %body2 {
@@ -53,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
-  color: $white;
+  color: $black;
 }
 
 .label {
@@ -61,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  color: $white;
+  color: $black;
 }
 
 .btn {
@@ -76,5 +86,19 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
   &:hover {
     background-color: #EDC14A;
+  }
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+.info {
+  & > * {
+    display: inline-block; 
+    @extend %body1; 
+    span {
+      color: $yellow;
+    }
   }
 }

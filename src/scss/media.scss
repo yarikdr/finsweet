@@ -31,6 +31,17 @@
     margin-top: 54px;
     padding: 70px 0;
   }
+
+  .posts {
+    &__body {
+      flex-wrap: wrap;
+    }
+
+    &__main-post {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -39,5 +50,9 @@
       font-size: 37px;
       line-height: 114.286%;
     }
+  }
+
+  .posts {
+    margin-top: 60px;
   }
 }
