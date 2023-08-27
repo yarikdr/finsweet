@@ -1,3 +1,14 @@
+@media (max-width: 1024px) {
+  .about {
+    &__about-us {
+      &_title {
+        font-size: 28px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .burger {
     display: block;
@@ -42,6 +53,17 @@
       margin-right: 0;
     }
   }
+
+  .about {
+    margin-top: 60px;
+    &__body {
+      padding: 48px 40px;
+      flex-wrap: wrap;
+      &>* {
+        flex-basis: auto;
+      }
+    }
+  }
 }
 
 @media (max-width: 425px) {
@@ -54,5 +76,16 @@
 
   .posts {
     margin-top: 60px;
+  }
+
+  .about {
+    &__about-us {
+      &_title {
+        font-size: 22px;
+      }
+    }
+    &__body {
+      padding: 34px 20px;
+    }
   }
 }
