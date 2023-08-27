@@ -117,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 10px;
 }
 
-.about__about-us_title, .posts__label, .posts__title, .about__our-mission_title, .post__title, .posts__item_title {
+.about__about-us_title, .posts__label, .posts__title, .category__title, .categories__title, .about__our-mission_title, .post__title, .posts__item_title {
   font-family: Sen;
   font-weight: 700;
   color: #232536;
@@ -134,12 +134,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.about__our-mission_title, .post__title {
+.category__title, .categories__title, .about__our-mission_title, .post__title {
   font-size: 28px;
   line-height: 32px;
 }
 @media (max-width: 425px) {
-  .about__our-mission_title, .post__title {
+  .category__title, .categories__title, .about__our-mission_title, .post__title {
     font-size: 22px;
   }
 }
@@ -154,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.about__our-mission_text, .about__about-us_text, .post__text, .posts__view-all, .intro__text, .intro__info > *, .menu__item, .info > * {
+.category__text, .about__our-mission_text, .about__about-us_text, .post__text, .posts__view-all, .intro__text, .intro__info > *, .menu__item, .info > * {
   font-family: Inter;
   font-size: 16px;
   line-height: 28px;
@@ -496,6 +496,52 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 516px;
 }
 
+.categories {
+  margin-top: 128px;
+  padding-bottom: 40px;
+}
+.categories__title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.categories__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 400px));
+  grid-auto-rows: 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.category {
+  padding: 32px;
+  transition: all 0.3s ease;
+  border: 1px solid #6D6E76;
+}
+.category__icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FBF6EA;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+.category__icon img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.category__title {
+  margin-bottom: 4px;
+}
+.category__text {
+  color: #6D6E76;
+}
+.category:hover {
+  background-color: #FFD050;
+  border-color: transparent;
+}
+
 body {
   font-family: Inter;
 }
@@ -576,5 +622,8 @@ body {
   }
   .about__body {
     padding: 34px 20px;
+  }
+  .categories {
+    margin-top: 60px;
   }
 }
